@@ -10,6 +10,7 @@ Original file is located at
 
 
 import streamlit as st
+import os
 
 # Title of the web app
 st.title("Welcome to My Interactive Website")
@@ -18,10 +19,9 @@ st.title("Welcome to My Interactive Website")
 user_name = st.text_input("What's your name?")
 
 # If a name is provided, display a greeting
+os.system ('cls')
 if user_name:
     st.write(f"Hello, {user_name}! Thanks for visiting this website.")
 else:
     st.write("Please enter your name above.")
 
-# Display a message
-st.write("This is a simple interactive app built with Streamlit.")
