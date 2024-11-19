@@ -72,7 +72,7 @@ if uploaded_file is not None:
 
     st.write("Tip: Ensure the selected columns are numeric for meaningful plots.")
 else:
-    st.info("Please upload a CSV file to get started.")
+    st.info("Please upload a XLSX file to get started.")
 
 """matplotlib
 pandas
