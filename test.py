@@ -12,10 +12,10 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # Title of the app
-st.title("XLSX Data Visualization App")
+st.title("CSV Data Visualization App")
 
 # File uploader for CSV
-uploaded_file = st.file_uploader("AQI_data_test.xlsx", type=["xlsx"])
+uploaded_file = st.file_uploader("AQI_dat.csv", type=["csv"])
 
 if uploaded_file is not None:
     # Read the CSV file
@@ -72,7 +72,7 @@ if uploaded_file is not None:
 
     st.write("Tip: Ensure the selected columns are numeric for meaningful plots.")
 else:
-    st.info("Please upload a XLSX file to get started.")
+    st.info("Please upload a CSV file to get started.")
 
 """matplotlib
 pandas
